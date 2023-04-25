@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donald Glover Neverending Conversation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <h1>Donald Glover Neverending Conversation</h1>
+    <p>I interviewed Donald Glover back in 2011. I decided to see what it would be like to interview the AI version of Donald.<br></p>
+
+    <p>Please use your own OpenAI API key.<br> OpenAI API keys are free. Generate one at <a href="https://platform.openai.com/">OpenAI's website</a>.</p>
+    <form onsubmit="generateResponse(event)">
+        <p>
+            <label for="api_key">API key:</label>
+            <input type="password" id="api_key" name="api_key" required>
+        </p>
+        <textarea id="conversation" name="conversation" rows="10" cols="80" readonly>{{ conversation }}</textarea><br>
+        <input type="submit" value="Generate Next Response">
+    </form>
+    <p> Visit <a href="https://beopen.space">beopen.space</a>
+</body>
+</html>
